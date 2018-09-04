@@ -326,14 +326,14 @@
             <h3 id="为什么学习Docker"><a href="#为什么学习Docker" class="headerlink" title="为什么学习Docker?"></a>为什么学习Docker?</h3><p>因为公司使用的开源框架EDX的H版本使用到了docker技术，所以学习docker已经是整个公司都在做的事。</p>
 <h3 id="什么是Docker"><a href="#什么是Docker" class="headerlink" title="什么是Docker?"></a>什么是Docker?</h3><p>Docker是Docker公司开源的一个基于轻量级虚拟化技术的容器引擎项目,整个项目基于Go语言开发，并遵从Apache 2.0协议。 目前，Docker可以在容器内部快速自动化部署应用，并可以通过内核虚拟化技术(namespaces及cgroups等)来提供容器的资源隔离与安全保障等。</p>
 <p>由于Docker通过操作系统层的虚拟化实现隔离，所以Docker容器在运行时，不需要类似虚拟机(VM)额外的操作系统开销，提高资源利用率，并且提升诸如IO等方面的性能。</p>
-<h3 id="Docker生态系统"><a href="#Docker生态系统" class="headerlink" title="Docker生态系统"></a>Docker生态系统</h3><p><img src="https://thumbnail0.baidupcs.com/thumbnail/95abcb86c110bdf3df366513e6acd54a?fid=3070486932-250528-615392458655520&amp;time=1535706000&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-iJKXKZQiQJUxiGKCn8Wr8xVdBEU%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=5629175627194702607&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="image"></p>
+<h3 id="Docker生态系统"><a href="#Docker生态系统" class="headerlink" title="Docker生态系统"></a>Docker生态系统</h3><p><img src="/images/2018/08/31/Docker_stxt.jpg" alt=""></p>
 <h3 id="Docker应用场景"><a href="#Docker应用场景" class="headerlink" title="Docker应用场景"></a>Docker应用场景</h3><ul>
 <li>web应用的自动化打包和发布</li>
 <li>自动化测试和持续集成、发布</li>
 <li>在服务型环境中部署和调整数据库或其他的后台应用</li>
 <li>从头编译或者扩展现有的OpenShift或Cloud Foundry平台来搭建自己的PaaS环境。</li>
 </ul>
-<h3 id="Docker总架构图"><a href="#Docker总架构图" class="headerlink" title="Docker总架构图"></a>Docker总架构图</h3><p><img src="https://thumbnail0.baidupcs.com/thumbnail/67463eefb6ac7f7326b7dbf85cd4caac?fid=3070486932-250528-429137253130575&amp;time=1535706000&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-uOrzlm4aciwOOukuPt0qiowKPhY%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=5629190444579547586&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="image"></p>
+<h3 id="Docker总架构图"><a href="#Docker总架构图" class="headerlink" title="Docker总架构图"></a>Docker总架构图</h3><p><img src="/images/2018/08/31/Dockek_zjgt.jpg" alt=""></p>
 <p>LXC：Linux软件容器（Linux Containers）的缩写，一种操作系统层虚拟化（Operating system–level virtualization）技术，为Linux内核容器功能的一个用户空间接口。它将应用软件系统打包成一个软件容器（Container），内含应用软件本身的代码，以及所需要的操作系统核心和库。透过统一的名字空间和共用API来分配不同软件容器的可用硬件资源，创造出应用程序的独立沙箱运行环境，使得Linux用户可以容易的创建和管理系统或应用容器。</p>
 <p>namespace：namespace是隔离的第一级，容器是相互隔离的，一个容器是看不到其它容器内部运行的进程情况。每个容器都分配了单独的网络栈，因此一个容器不可能访问另一容器的sockets。为了支持容器之间的IP通信，您必须指定容器的公网IP端口。</p>
 <p>Control Groups：Control Groups是非常重要的组件，具有以下功能：</p>
